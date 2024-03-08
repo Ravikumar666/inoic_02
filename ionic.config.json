@@ -1,0 +1,7 @@
+{
+  "name": "inoic_02",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
