@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>recipes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngIf="noRecipes">
+      <ion-label slot="start">No Data</ion-label>
+    </ion-item>
+    <app-recipe-item *ngFor="let recipe of recipes" [recipeItems]="recipe"></app-recipe-item>
+  </ion-list>
+</ion-content>
